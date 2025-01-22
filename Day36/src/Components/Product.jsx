@@ -14,7 +14,7 @@ function Product() {
     },[])
 
     return (<>
-      {select.isLoading ?<Loader/> :
+      {select.isLoading ? <Loader/> : 
           <div className='cardbox'>
           {select.arr.map((e) => {
           return <div className='cart'> 
@@ -24,7 +24,7 @@ function Product() {
             </div>
         })}
         </div>
-  }
+      }
         </>
       );
   }

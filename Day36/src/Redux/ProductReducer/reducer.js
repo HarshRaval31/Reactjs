@@ -1,4 +1,6 @@
-import { isLoading, isSuccsess, isErr, issuccsess, iserr } from "./actiontype"
+// import { isLoading, isSuccsess, isErr, issuccsess, iserr } from "./actiontype"
+
+import { iserr, isloading, issuccsess } from "./actiontype"
 
 let name ={
     isLoading : false,
@@ -10,7 +12,7 @@ let name ={
 export let Productreducer = (state = name ,{type,paylod})=>{
 
         switch(type){
-            case isLoading :
+            case isloading :
                 return {...state,isLoading : true}
 
             case issuccsess :
